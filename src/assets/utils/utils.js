@@ -1,0 +1,1 @@
+export const DOMAIN_URL ='https://url-shortener2-rjz7.onrender.com'

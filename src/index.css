@@ -1,0 +1,267 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+}
+
+:root{
+  --background:#303030;
+  --lightbackground:#424242;
+  --lightestgray:#494949;
+  --lightergray:#595959;
+  --transparentgray:#5959591c;
+  --blue:#556CD6;
+  --red:red;
+  --white:#fff;
+
+}
+
+/* body,html,#root{
+  width: 100vw;
+  height: 100vh;
+} */
+.App{
+  display: flex;
+  background-color: var(--background);
+  width: 100vw;
+  height: 100vh;
+}
+.App>*{
+  flex-grow: 1;
+}
+aside{
+  height: 100%;
+  width: 30%;
+  max-width: 150px;
+  background-color: var(--lightbackground);
+  /* background-color: pink; */
+  color: var(--white);
+}
+aside>*{
+  margin-left: 20px;
+}
+aside h1{
+  font-weight: bold;
+  margin-top: 10px;
+  border-bottom: 3px solid var(--lightergray);
+  padding-bottom: 10px;
+  cursor: pointer;
+}
+aside .tab{
+  padding: 10px 0;
+  border-bottom: 3px solid var(--lightergray);
+}
+aside .tab span{
+  background-color: red;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  padding: 5px;
+  /* border-radius: 50%; */
+  margin-right: 10px;
+}
+aside .tab a{
+  text-decoration: none;
+  color: var(--white);
+}
+aside .tab:hover{
+  background-color:var(--background);
+  border-bottom: 3px solid var(--background);
+}
+main{
+  height: 100%;
+  width: 60%;
+  /* background-color: red; */
+}
+main .app-header{
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: normal;
+  padding-top: 10px;
+  border-bottom: 3px solid var(--lightergray);
+  padding-bottom: 10px;
+}
+main  .settings-heading{
+  color: var(--white);
+  margin-top: 20px;
+  margin-left: 20px;
+}
+main .changetheme{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 4px 10px;
+  border-radius: 5px;
+
+}
+main .logout{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: #F44336;
+  border: none;
+  color: var(--white);
+  
+}
+main .app-header >*{
+  margin-left: 20px;
+}
+main .app-header .perfection a{
+  /* background-color: red; */
+  text-decoration: underline;
+  cursor: pointer;
+  /* color: var(--lightbackground); */
+  color: springgreen;
+}
+main .app-details{
+  color: var(--white);
+  font-weight: normal;
+  padding-top: 10px;
+}
+main .app-details >*{
+  margin-left: 20px;
+}
+main form{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+main form .shortened-url{
+  /* background-color: red; */
+  background-color: var(--lightestgray);
+  margin: auto;
+  padding: 10px;
+}
+main form .url-title{
+  position: absolute;
+  margin-top: -9px;
+  margin-left: 40px;
+  background-color: var(--background);
+  padding: 5px;
+  padding-top: 0;
+}
+main form .shorten{
+  background-color: var(--lightestgray);
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  max-width: 100px;
+  color: #807D72;
+}
+main form .shorten:hover{
+  background-color: var(--blue);
+  color: var(--white);
+}
+main a{
+  color: var(--white);
+}
+.btn{
+  cursor: pointer;
+}
+main form input{
+  background-color: transparent;
+  border: 2px solid var(--blue);
+  border-radius: 5px;
+  padding: 10px;
+  margin-right: 10px;
+  outline: none;
+  color: #807D72;
+}
+/* linkStatistics */
+main .linkstatistics{
+  background-color: var(--lightbackground);
+  margin: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex ;
+  justify-content: center;
+  /* align-items: center; */
+  
+}
+main .linkstatistics>*{
+  display: flex;
+  /* background-color: red; */
+  justify-content: space-between;
+  width: 80%;
+  margin: 10px 0;
+  padding-top: 2px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  /* border-bottom: 2px solid var(--lightergray); */
+}
+main .linkstatistics.linkstatistics.contentsDetails{
+  background-color: var(--transparentgray);
+}
+main .linkstatistics.contentsDetails div{
+  border-bottom: 2px solid transparent;
+  color: var(--white);
+}
+main .linkstatistics.linkstatistics.contentsDetails .views{
+  background-color: var(--blue);
+  padding: 5px;
+  border-radius: 50%;
+}
+
+main .linkstatistics h1{
+  color: var(--white);
+  font-weight: normal;
+}
+
+
+/* ////////////// */
+.homepage{
+  background-color: var(--background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.homepage .getStarted{
+  padding: 10px;
+  background-color: var(--blue);
+  color: var(--white);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* //////// */
+.signinpage{
+  background-color: var(--background);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signinpage .formcontainer{
+  width: 95%;
+  /* height: 70%; */
+  max-width: 400px;
+  color: var(--white);
+  background-color: var(--lightbackground);
+  border-radius: 5px;
+}
+.signinpage .formcontainer form{
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.signinpage .formcontainer form > * {
+  flex-grow: 1;
+  margin: 10px 0;
+}
+.signinpage .formcontainer form input{
+  background-color: transparent;
+  border: none;
+  color: var(--white);
+  padding: 5px 0;
+  border-bottom: 1px solid var(--lightergray);
+  outline: none;
+}
+.signinpage .formcontainer form .linkcontainer{
+  color: none;
+}
